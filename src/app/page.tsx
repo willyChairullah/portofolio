@@ -1,4 +1,5 @@
 import IntroduceSection from "@/components/IntroduceSection";
+import OpenSourceSection from "@/components/OpenSourceSection";
 import ProjectSection from "@/components/ProjectSection";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <IntroduceSection />
       <ProjectSection />
+      <OpenSourceSection />
     </>
   );
 }

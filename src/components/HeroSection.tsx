@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <div className="relative z-10">
       <div className="w-full h-screen flex items-center">
-        <div className="ml-50 max-w-5xl mt-20">
+        <div className="ml-50 max-w-5xl mt-10">
           <h1
             className={`font-inter font-extrabold text-7xl ${
               isDarkTheme ? "text-white" : "text-[#1A1A1A]"
