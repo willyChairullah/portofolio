@@ -10,7 +10,7 @@ const projects = [
     title: "Donghua MnY",
     description:
       "A Chinese animation (donghua) listing website with comprehensive information and viewing options",
-    image: "/images/project1.jpg", // Placeholder path, replace with your image
+    image: "/images/Donghua.png", // Placeholder path, replace with your image
     detailLink: "/projects/donghua-mny",
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     title: "Mini ATM Machine",
     description:
       "Desktop application for counter transactions with built-in payment processing features",
-    image: "/images/project2.jpg", // Placeholder path, replace with your image
+    image: "/images/MiniATM.png", // Placeholder path, replace with your image
     detailLink: "/projects/mini-atm",
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     title: "ERP Procurement System",
     description:
       "Enterprise Resource Planning solution focusing on procurement management",
-    image: "/images/project3.jpg", // Placeholder path, replace with your image
+    image: "/images/ERP.png", // Placeholder path, replace with your image
     detailLink: "/projects/erp-procurement",
   },
 ];

@@ -14,6 +14,7 @@ interface OpenSourceCardProps {
 }
 
 export default function OpenSourceCard({ project }: OpenSourceCardProps) {
+  
   return (
     <div className="w-full sm:w-1/2 md:w-1/4 h-64 relative group overflow-hidden">
       {/* Background gradient with enhanced animation */}
@@ -27,6 +28,8 @@ export default function OpenSourceCard({ project }: OpenSourceCardProps) {
           <Image
             src={project.imageUrl}
             alt={project.title}
+            width={800}
+            height={450}
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-black opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
