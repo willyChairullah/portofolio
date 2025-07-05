@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface OpenSourceCardProps {
   project: {
     id: number;
@@ -7,6 +9,7 @@ interface OpenSourceCardProps {
     hoverGradient: string;
     textColor: string;
     tags: string[];
+    imageUrl?: string; // Optional image URL
   };
 }
 
@@ -17,7 +20,39 @@ export default function OpenSourceCard({ project }: OpenSourceCardProps) {
       <div
         className={`absolute inset-0 bg-gradient-to-r ${project.gradient} transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:${project.hoverGradient}`}
       ></div>
-      <div className="absolute inset-0 bg-black opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+
+      {/* Image with 16:9 aspect ratio, if provided */}
+      {project.imageUrl ? (
+        <div className="absolute inset-0 w-full h-full">
+          <Image
+            src={project.imageUrl}
+            alt={project.title}
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-black opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+        </div>
+      ) : (
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
+          {/* Fixed direct inline style approach for sliding animation */}
+          <div
+            className="absolute inset-0 bg-black"
+            style={{
+              width: "200%",
+              left: "0",
+              animation: "slideRight 8s linear infinite",
+              background:
+                "linear-gradient(to right, black, #333, black, #333, black)",
+            }}
+          ></div>
+        </div>
+      )}
+
+      {/* Dark overlay (lighter if there's an image) */}
+      <div
+        className={`absolute inset-0 bg-black ${
+          project.imageUrl ? "opacity-10" : "opacity-30"
+        } group-hover:opacity-50 transition-opacity duration-300`}
+      ></div>
 
       {/* Number indicator that appears on hover */}
       <div className="absolute -top-14 -right-14 w-28 h-28 opacity-0 group-hover:opacity-100 transform rotate-0 group-hover:rotate-12 transition-all duration-500 ease-out">

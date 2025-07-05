@@ -1,5 +1,6 @@
 import ThemeToggle from "./ThemeToggle";
 import { useCallback, useEffect, useState } from "react";
+import Image from "next/image";
 
 interface NavbarProps {
   isLightSection: boolean;
@@ -99,7 +100,7 @@ export default function Navbar({ isLightSection }: NavbarProps) {
       }`}
     >
       <div className="w-[50px] items-center ml-5">
-        <img src="next.svg" alt="logo" srcSet="vercel.svg" />
+        <Image src="/next.svg" alt="Logo" width={50} height={50} priority />
       </div>
       <div className="flex items-center space-x-15 mx-5">
         <div className="flex items-center space-x-16">

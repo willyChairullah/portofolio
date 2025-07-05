@@ -11,6 +11,8 @@ const openSourceProjects = [
     hoverGradient: "from-indigo-600 to-purple-600",
     textColor: "text-indigo-600",
     tags: ["React", "TypeScript"],
+    // Test with an image
+    imageUrl: "https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=1300&auto=format&fit=crop"
   },
   {
     id: 2,
@@ -20,6 +22,8 @@ const openSourceProjects = [
     hoverGradient: "from-blue-600 to-teal-500",
     textColor: "text-blue-600",
     tags: ["CSS", "JavaScript"],
+    // Test with an image
+    imageUrl: "https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=1300&auto=format&fit=crop"
   },
   {
     id: 3,
@@ -29,6 +33,8 @@ const openSourceProjects = [
     hoverGradient: "from-red-600 to-yellow-600",
     textColor: "text-red-600",
     tags: ["SVG", "Design"],
+    // Test with an image
+    imageUrl: "https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=1300&auto=format&fit=crop"
   },
   {
     id: 4,
@@ -38,6 +44,8 @@ const openSourceProjects = [
     hoverGradient: "from-green-600 to-emerald-700",
     textColor: "text-green-600",
     tags: ["React", "Next.js"],
+    // Test with an image
+    imageUrl: "https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=1300&auto=format&fit=crop"
   },
 ];
 
@@ -51,7 +59,7 @@ export default function OpenSourceSection() {
       <SectionHeader subtitle="Experiments & Open Source" title="Web is Fun" />
 
       {/* Open Source Projects - Horizontal Cards */}
-      <div className="w-full max-w-5xl px-4">
+      <div className="w-full px-4">
         <div className="w-full flex flex-wrap mt-6">
           {openSourceProjects.map(project => (
             <OpenSourceCard key={project.id} project={project} />

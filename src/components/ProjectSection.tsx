@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import SectionHeader from "./ui/SectionHeader";
 import ProjectCard from "./ui/ProjectCard";
 import ViewMoreButton from "./ui/ViewMoreButton";
@@ -42,7 +42,7 @@ export default function ProjectSection() {
 
       {/* Project cards grid */}
       <div className="w-full max-w-5xl px-4">
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col space-y-12">
           {projects.map(project => (
             <ProjectCard key={project.id} project={project} />
           ))}

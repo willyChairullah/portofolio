@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectCardProps {
@@ -17,7 +17,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
   return (
     <div
-      className={`relative w-full pt-14 px-6 pb-14 flex ${
+      className={`relative w-full pt-6 px-6 pb-14 flex ${
         isEven ? "justify-start" : "justify-end"
       } items-center group`}
     >
@@ -28,16 +28,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         } w-72 h-72 opacity-0 group-hover:opacity-100 transform translate-y-5 group-hover:translate-y-0 transition-all duration-1000 ease-out z-10`}
       >
         <div
-          className={`absolute bottom-10 ${
+          className={`absolute bottom-18 ${
             isEven ? "left-0" : "right-0"
-          } flex items-center justify-center font-extrabold text-[12rem] text-gray-400 group-hover:text-white transition-colors duration-500 delay-700 filter drop-shadow-[0_12px_12px_rgba(0,0,0,0.8)]`}
+          } flex items-center justify-center font-extrabold text-[12rem] overflow-hidden text-gray-400 group-hover:text-white transition-colors duration-500 delay-700 filter drop-shadow-[0_12px_12px_rgba(0,0,0,0.8)]`}
         >
           {project.id < 10 ? `0${project.id}` : String(project.id)}
         </div>
       </div>
 
       {/* Actual card within the larger container */}
-      <div className="relative w-[95%] aspect-[16/8] overflow-hidden transform transition-all duration-500 hover:scale-[1.02] hover:shadow-xl hover:-translate-y-1">
+      <div className="relative w-[95%] aspect-[16/8] overflow-hidden transform transition-all duration-500 group-hover:scale-[1.02] group-hover:-translate-y-1 shadow-[0_4px_20px_rgba(0,0,0,0.3)] group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
         {/* Card content sparkle effect */}
         <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-500 blur opacity-0 group-hover:opacity-20 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
 

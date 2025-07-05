@@ -16,7 +16,7 @@ function IntroduceSectionContent() {
     <section
       id="home"
       className={`w-full h-screen ${
-        isDarkTheme ? "bg-[#1A1A1A]" : "bg-[#E8E8E8]"
+        isDarkTheme ? "bg-[#1C1D25]" : "bg-[#E8E8E8]"
       } relative overflow-hidden transition-colors duration-300`}
     >
       {/* Parallax Background Icons */}
