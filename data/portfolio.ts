@@ -67,10 +67,10 @@ export interface SkillCategory {
 }
 
 export const personalInfo: PersonalInfo = {
-  name: "Willy Pratama",
+  name: "Willy Chairullah",
   title: "Full-Stack Web Developer",
-  email: "willypratama.dev@gmail.com",
-  location: "Surabaya / UTM",
+  email: "willy.chairullahfp@gmail.com",
+  location: "Bangkalan",
   university: "Universitas Trunojoyo Madura",
   major: "S1 Teknik Informatika (Informatics Engineering)",
   graduation: "Graduated: July 2026",
@@ -120,7 +120,7 @@ export const experienceData: ExperienceItem[] = [
     company: "Procurement ERP System",
     period: "Feb 2025 – Jun 2025",
     type: "Structured 4-Month Internship Program",
-    stack: ["CodeIgniter","PostgreSQL", "Full-Stack Web"],
+    stack: ["CodeIgniter", "PostgreSQL", "Full-Stack Web"],
     points: [
       "Developed full-stack features from scratch for an internal procurement ERP system, including role-based access control (RBAC) for distinct CRUD permissions.",
       "Completed a structured 4-month internship program (Merdeka Belajar Kampus Merdeka), delivering functional modules on schedule."
